@@ -1,0 +1,28 @@
+
+/*selector etiqueta, id o clase*/
+/*id #cabeceraweb se utiliza para aplicar apariencia a un unico documento*/
+#origen { /*id*/
+    background-color: gray;
+}
+body {
+    background-color:rgb(251, 255, 0);
+}
+p {
+    text-align: justify;
+}
+li {
+    display:inline;
+}
+aside {
+    background-color: gray;
+    float: right;
+}
+/*header {
+    background-color: blueviolet;
+}
+h2{
+    background-color: green;
+}
+footer {
+    background-color: blueviolet;
+}*/
