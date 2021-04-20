@@ -10,11 +10,12 @@
     <script src="scripts/js.js"></script>
 </head>
 <body>
-    <header><h1>Bienvenido a la página de los Shar Pei<img src="dog.svg" width="50" height="20" alt="icono de perro"></h1></header>
+    <header><h1>Bienvenido a la página de los Shar Pei<img src="/Web/img/shar-pei-facebook-640x427.jpg" width="" height="" alt="icono de perro"></h1></header>
     <nav id="nav">
         <ul>
             <li><a href="food.html">Alimentación</a></li>
             <li><a href="health_excercise.html">Salud y ejercicio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
     <main>
@@ -42,11 +43,23 @@
             
                 <p>Este <em>cruce de mastín inglés</em> con otras razas nórdicas tiene siglos de antigüedad. La lengua azul es una característica que comparte con el <a href="https://es.wikipedia.org/wiki/Chow_Chow_(raza_de_perro)" target="_blank" title="Wikipedia: Chow Chow">chow chow</a>, una raza con la que tiene lazos de sangre. Al principio, el shar pei se consideraba un manjar en China y la prohibición de emplearlos como mascotas en este país casi llevó a la raza a su extinción. Por suerte, <a href="https://sharpeiperu.wordpress.com/2010/10/25/la-contribucion-de-matgo-law/" target="_blank" title="Contribución de Matgo Law a los Shar Pei">Matgo Law</a>, un criador interesado en estos perros, consiguió despertar el interés del mundo occidental por esta raza y la salvó de su extinción. Cuando los shar pei llegaron por primera vez a Occidente en la década de los setenta, se los consideraba la <strong>especie más rara del mundo</strong>.</p>
         </article>
+        <div id="comentarios">
+            <form action="https://formspree.io/f/xayanpjb" method="POST" target="_blank">
+                <fieldset id="comentarios" name="comentarios" value="comentarios">
+                    <legend>Dejanos tu comentario</legend>
+                    <label for="email" class="descripcion">Your email:</label>
+                    <input id="email" name="email" type="text" value="" class="cajas" required><br>
+                    <textarea id="texto" name="comentarios" placeholder="Comentario" rows="10" cols="100"></textarea><br>
+                    <input id="submit_button" type="submit" value="Send">
+                </fieldset>
+            </form>
+        </div>
     </main>
         <footer>
-            @Paola Cartalá 2021
+            <p>Dev. Paola Cartalá - 2021</p><br>
             <a href="mailto:paola.cartala@gmail.com?subject=Pagina%20SharPage" title="E-mail" target="_blank"><img src="mail.svg" alt="Imagen de mail" width="50" height="20"></a>
             <a href="https://www.linkedin.com/in/paola-cartal%C3%A1-3b11b45a" title="Perfil LinkedIn" target="_blank"><img src="linkedin.svg" alt="Imagen de mail" width="50" height="20"></a>
+            <h2>Mapa del Sitio</h2>
         </footer>
 </body>
 </html>

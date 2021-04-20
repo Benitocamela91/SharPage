@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shar page - Contacto</title>
+    <link rel="shortcut icon" href="paw-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="scripts/js.js"></script>
+</head>
+<body>
+    <header><h1>Bienvenido a la página de los Shar Pei<img src="dog.svg" width="50" height="20" alt="icono de perro"></h1></header>
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="food.html">Alimentación</a></li>
+            <li><a href="health_excercise.html">Salud y ejercicio</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Te podés contactar con nosotros</h2>
+        <form action="https://formspree.io/f/xayanpjb" method="POST" target="_blank">
+            <label for="name" class="descripcion">Your name:</label>
+            <input id="name" name="name" type="text" value="" class="cajas" required><br>
+            <label for="email" class="descripcion">Your email:</label>
+            <input id="email" name="email" type="text" value="" class="cajas" required><br>
+            <label for="message" class="descripcion">Your message:</label><br>
+            <textarea id="message" name="message" rows="7" cols="30" class="cajas" required placeholder="Escribí tu mensaje acá"></textarea><br>
+            <input id="submit_button" type="submit" value="Send email">
+        </form>
+    </main>
+    <footer>
+        @Paola Cartalá 2021
+        <a href="mailto:paola.cartala@gmail.com?subject=Pagina%20SharPage" title="E-mail" target="_blank"><img src="mail.svg" alt="Imagen de mail" width="50" height="20"></a>
+        <a href="https://www.linkedin.com/in/paola-cartal%C3%A1-3b11b45a" title="Perfil LinkedIn" target="_blank"><img src="linkedin.svg" alt="Imagen de mail" width="50" height="20"></a>
+    </footer>
+</body>
+</html>

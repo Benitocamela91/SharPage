@@ -1,31 +1,15 @@
-
-/*selector etiqueta, id o clase*/
-/*id #cabeceraweb se utiliza para aplicar apariencia a un unico documento*/
-#origen { /*id*/
-    background-color: gray;
+h1 {
+    font-size: 5em;
+    background-color:#542e71;
 }
-body {
-    background-color:rgb(251, 255, 0);
-}
-p {
-    text-align: justify;
-}
-li {
-    display:inline;
-}
-aside {
-    background-color: gray;
-    float: right;
-}
-/*header {
-    background-color: blueviolet;
-}
-h2{
-    background-color: green;
+nav {
+    color: #542e71;
+    font-size: 180%;
 }
 footer {
-    background-color: blueviolet;
-}*/
-h1 {
-    color:rebeccapurple;
+    background-color: #2b2e4a;
+    color:black;
+}
+footer p {
+    font-size: 30px;
 }
