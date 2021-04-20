@@ -1,10 +1,26 @@
+@font-face {
+    font-family: "Original Surfer";
+    font-style: normal;
+    font-weight: normal;
+    src: url(/Web/fonts/OriginalSurfer-Regular.ttf);
+}
+@font-face {
+    font-family: "Rajdhani";
+    font-style: normal;
+    font-weight: normal;
+    src: url(/Web/fonts/Rajdhani-Regular.ttf)
+}
 h1 {
     font-size: 5em;
+    font-family: Original Surfer;
     background-color:#542e71;
 }
 nav {
     color: #542e71;
     font-size: 180%;
+}
+nav li{
+    display:inline;
 }
 footer {
     background-color: #2b2e4a;
@@ -12,4 +28,7 @@ footer {
 }
 footer p {
     font-size: 30px;
+}
+body {
+    font-family: Rajdhani;
 }
