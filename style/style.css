@@ -10,16 +10,18 @@
     font-weight: normal;
     src: url(/Web/fonts/Rajdhani-Regular.ttf)
 }
-h1 {
-    font-size: 50px;
+header {
+    font-size: 30px;
     font-family: Original Surfer; /*agrego la font que descargué*/
-    background-color:#457b9d;
+    color:#457b9d;
     text-align:center;
 }
 nav {
     color: #1d3557;
     font-size: 170%;
     text-align: center;
+    border-bottom: dotted 15px;
+    margin-bottom: 50px;
 }
 nav li {
     display:inline; /*para que los elemenos de nav se muestren en la misma linea*/
@@ -39,16 +41,22 @@ body {
     font-family: Rajdhani; /*agrego las fuentes nuevas a body*/
     text-align: justify;
 }
-h2 {
+article h2 {
     text-align: center;
     color:#1d3557;
 }
 aside {
     background-color:#f1faee;
     box-shadow: #808B96 5px 10px 15px 5px; /*agregue una sombra a la caja*/
+    float:right; /*con esta propiedad la caja va a la derecha*/
+    margin-left: 10px; /*margen para que no pise el parrafo*/
+    overflow: auto;
+}
+.claerfloat {
+    clear:both;
 }
 main img {
-    border:2px solid #7D3C98; /*bordes a las imagenes, solo en main*/
+    border:2px solid #9d457b; /*bordes a las imagenes, solo en main*/
 }
 footer {
     background-color: #e63946;
@@ -56,5 +64,5 @@ footer {
     text-align: center;
 }
 footer p {
-    font-size: 30px;
+    font-size: 20px;
 }
