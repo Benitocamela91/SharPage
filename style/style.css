@@ -1,4 +1,4 @@
-@font-face {
+@font-face { /*agrega una fuente que descargué de Google Fonts*/
     font-family: "Original Surfer";
     font-style: normal;
     font-weight: normal;
@@ -11,24 +11,50 @@
     src: url(/Web/fonts/Rajdhani-Regular.ttf)
 }
 h1 {
-    font-size: 5em;
-    font-family: Original Surfer;
-    background-color:#542e71;
+    font-size: 50px;
+    font-family: Original Surfer; /*agrego la font que descargué*/
+    background-color:#457b9d;
+    text-align:center;
 }
 nav {
-    color: #542e71;
-    font-size: 180%;
+    color: #1d3557;
+    font-size: 170%;
+    text-align: center;
 }
-nav li{
-    display:inline;
+nav li {
+    display:inline; /*para que los elemenos de nav se muestren en la misma linea*/
+    padding: 5px; /*modifique el relleno*/
+    margin:17px; /*modifique los margenes de los elementos*/
+}
+nav li:hover { /*aplique hover para cuando pasa el cursor por encima*/
+    border: 2px solid #1d3557;
+    border-radius: 15px; /*con esto se redondean los bordes*/
+    padding: 5px;
+    margin:15px;
+}
+nav li a {
+    text-decoration: none; /*le saqué la línea de enlace de nav*/
+}
+body {
+    font-family: Rajdhani; /*agrego las fuentes nuevas a body*/
+    text-align: justify;
+}
+h2 {
+    text-align: center;
+    color:#1d3557;
+}
+aside {
+    background-color:#f1faee;
+    box-shadow: #808B96 5px 10px 15px 5px; /*agregue una sombra a la caja*/
+}
+main img {
+    border:2px solid #7D3C98; /*bordes a las imagenes, solo en main*/
 }
 footer {
-    background-color: #2b2e4a;
+    background-color: #e63946;
     color:black;
+    text-align: center;
 }
 footer p {
     font-size: 30px;
-}
-body {
-    font-family: Rajdhani;
 }
