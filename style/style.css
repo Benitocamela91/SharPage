@@ -1,15 +1,4 @@
-@font-face { /*agrega una fuente que descargué de Google Fonts*/
-    font-family: "Original Surfer";
-    font-style: normal;
-    font-weight: normal;
-    src: url(/Web/fonts/OriginalSurfer-Regular.ttf);
-}
-@font-face {
-    font-family: "Rajdhani";
-    font-style: normal;
-    font-weight: normal;
-    src: url(/Web/fonts/Rajdhani-Regular.ttf)
-}
+
 header {
     font-size: 30px;
     font-family: Original Surfer; /*agrego la font que descargué*/
