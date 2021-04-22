@@ -1,23 +1,44 @@
-
+* {
+    margin: 0px;
+    padding: 0px;
+}
 header {
     font-size: 30px;
     font-family: Original Surfer; /*agrego la font que descargué*/
     color:#457b9d;
-    text-align:center;
+    display: inline-block;
+    background-color: #000000;
+    border-radius: 8px;
+    margin:5px;
 }
-nav {
+header img {
+    float:right;
+    width: 30%;
+    border-radius: 8px;
+}
+header h1{
+    float:left;
+    width: 69%;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 40px;
+}
+#nav-header {
     color: #1d3557;
     font-size: 170%;
     text-align: center;
     border-bottom: dotted 15px;
     margin-bottom: 50px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: 100%;
 }
 nav li {
     display:inline; /*para que los elemenos de nav se muestren en la misma linea*/
     padding: 5px; /*modifique el relleno*/
     margin:17px; /*modifique los margenes de los elementos*/
 }
-nav li:hover { /*aplique hover para cuando pasa el cursor por encima*/
+#nav-header li:hover { /*aplique hover para cuando pasa el cursor por encima*/
     border: 2px solid #1d3557;
     border-radius: 15px; /*con esto se redondean los bordes*/
     padding: 5px;
@@ -30,28 +51,139 @@ body {
     font-family: Rajdhani; /*agrego las fuentes nuevas a body*/
     text-align: justify;
 }
-article h2 {
+main {
+    padding: 15px;
+    width: 98%;
+    font-size: 120%;
+}
+.icon {
+    color:#000000;
+}
+h2 {
     text-align: center;
     color:#1d3557;
+    margin-bottom: 1%;
+}
+h3 {
+    text-align: left;
+    color:#1d3557;
+    margin-bottom: 1%;
+    margin-top: 1%;
 }
 aside {
     background-color:#f1faee;
-    box-shadow: #808B96 5px 10px 15px 5px; /*agregue una sombra a la caja*/
     float:right; /*con esta propiedad la caja va a la derecha*/
-    margin-left: 10px; /*margen para que no pise el parrafo*/
+    margin-left: 5px; /*margen para que no pise el parrafo*/
     overflow: auto;
+    border-radius: 8px;
+    box-shadow: 0 13px 27px -5px hsl(240deg 30% 28% / 25%), 0 8px 16px -8px hsl(0deg 0% 0% / 30%), 0 -6px 16px -6px hsl(0deg 0% 0% / 3%);
 }
-.claerfloat {
-    clear:both;
+article {
+    margin-bottom: 2%;
+}
+article li{
+    list-style-position:inside;
+    list-style-type:square;
+    padding-left: 2%;
+}
+main a:visited {
+    color:#e63946;
+}
+main a:hover {
+    text-decoration: none;
+}
+main iframe {
+    margin: 2%;
+    float:right;
 }
 main img {
-    border:2px solid #9d457b; /*bordes a las imagenes, solo en main*/
+    border:1px solid #000000; /*bordes a las imagenes, solo en main*/
+    border-radius: 8px;
+    box-shadow: 0 13px 27px -5px hsl(240deg 30% 28% / 25%), 0 8px 16px -8px hsl(0deg 0% 0% / 30%), 0 -6px 16px -6px hsl(0deg 0% 0% / 3%); /*agregue una sombra a la caja*/
+    margin-bottom: 2%;
+}
+#tipo_de_alimentos {
+    margin-top: 1%;
+    border: solid #1d3557;
+}
+th {
+    padding:1%;
+    border-bottom: solid #1d3557;
+    text-align: center;
+}
+td {
+    padding: 1%;
+}
+#contacto {
+    border: 3px solid #1d3557;
+    text-align: center;
+}
+.sharpage {
+    font-family: Original Surfer;
+    color:#457b9d;
+}
+#message {
+    font-family: Rajdhani;
+    padding: 1%;
+}
+#comentarios {
+    text-align: center;
+    width: 100%;
+    border-radius: 15px;
+}
+#comentarios legend {
+    padding-bottom: 1%;
+    font-size: 120%;
+}
+#email {
+    margin-bottom: 1%;
+}
+#comentarios textarea {
+    font-family: Rajdhani;
+    padding: 1%;
+}
+
+#submit_button {
+    font-family: Rajdhani;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 15px;
 }
 footer {
     background-color: #e63946;
     color:black;
     text-align: center;
+    display: inline-block;
+    width: 100%;
+    display: flex;
 }
-footer p {
-    font-size: 20px;
+#parrafo-footer {
+    flex:1;
+    font-size: 150%;
+    float:left;
+    padding: 1%;
+}
+#redes {
+    flex:2;
+}
+.icon1 {
+    flex: 1;
+    float:right;
+    width: 5%;
+    padding: 2%;
+    padding-right: 15%;
+}
+.icon2 {
+    flex:1;
+    float:right;
+    width: 5%;
+    padding: 2%;
+    padding-right: 15%;
+}
+.icon3 {
+    flex:1;
+    float:right;
+    width: 5%;
+    padding: 2%;
+    padding-right: 15%;
 }
