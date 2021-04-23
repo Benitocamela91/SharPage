@@ -57,7 +57,13 @@ main {
     font-size: 120%;
 }
 .icon {
-    color:#000000;
+    color:#000000 im !important;
+}
+.icon-arriba {
+    position:fixed;
+    right:0px;
+    bottom:20px;
+    width: 3%;
 }
 h2 {
     text-align: center;
@@ -117,6 +123,8 @@ td {
 #contacto {
     border: 3px solid #1d3557;
     text-align: center;
+    margin-right: 40%;
+    margin-left:40%;
 }
 .sharpage {
     font-family: Original Surfer;
