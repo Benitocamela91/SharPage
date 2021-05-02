@@ -4,50 +4,45 @@
 }
 /*modifico el header*/
 header {
-    font-size: 30px;
     font-family: Original Surfer; /*agrego la font que descargué*/
-    color:#457b9d;
-    display: inline-block;
-    background-color: #000000;
-    border-radius: 8px;
     margin:5px;
 }
-header img {
-    float:right;
-    width: 30%;
-    border-radius: 8px;
-}
 header h1{
-    float:left;
-    width: 69%;
+    font-size: 5vw;
+    color:#6a2c70;
     text-align: center;
-    padding-left: 10px;
-    padding-top: 40px;
+    padding: 4vw;
 }
 /*menu de navegacion*/
 #nav-header {
-    color: #1d3557;
+    color: #6a2c70;
     font-size: 170%;
+    display: flex;
+    flex-flow: row wrap;
     text-align: center;
+    justify-content: space-around;
+    align-content: space-around;
     border-bottom: dotted 15px;
     margin-bottom: 50px;
     padding-bottom: 30px;
     padding-top: 30px;
     width: 100%;
 }
+
 nav li {
     display:inline; /*para que los elemenos de nav se muestren en la misma linea*/
     padding: 5px; /*modifique el relleno*/
     margin:17px; /*modifique los margenes de los elementos*/
 }
 #nav-header li:hover { /*aplique hover para cuando pasa el cursor por encima*/
-    border: 2px solid #1d3557;
+    border: 2px solid #6a2c70;
     border-radius: 15px; /*con esto se redondean los bordes*/
     padding: 5px;
     margin:15px;
 }
 nav li a {
     text-decoration: none; /*le saqué la línea de enlace de nav*/
+    color: #b83b5e;
 }
 /*cuerpo de la pagina*/
 body {
@@ -55,9 +50,8 @@ body {
     text-align: justify;
 }
 main {
-    padding: 15px;
-    width: 98%;
-    font-size: 120%;
+    padding: 2vw;
+    font-size: 20px;
 }
 /*icono de volver arriba*/
 .icon {
@@ -65,31 +59,45 @@ main {
 }
 .icon-arriba {
     position:fixed;
-    right:0px;
     bottom:20px;
-    right: 10px;;
-    width: 3%;
+    right: 20px;;
+    width: 4vw;
 }
 /*titulos*/
 h2 {
     text-align: center;
-    color:#1d3557;
+    color:#6a2c70;
     margin-bottom: 1%;
 }
 h3 {
     text-align: left;
-    color:#1d3557;
+    color:#6a2c70;
     margin-bottom: 1%;
     margin-top: 1%;
 }
-/*aside*/
-aside {
-    background-color:#f1faee;
-    float:right; /*con esta propiedad la caja va a la derecha*/
-    margin-left: 5px; /*margen para que no pise el parrafo*/
+/*galeria de fotos*/
+#galeria {
+    background-color:#f08a5d;
     overflow: auto;
-    border-radius: 8px;
     box-shadow: 0 13px 27px -5px hsl(240deg 30% 28% / 25%), 0 8px 16px -8px hsl(0deg 0% 0% / 30%), 0 -6px 16px -6px hsl(0deg 0% 0% / 3%);
+    border-radius: 15px;
+    overflow:hidden;
+    display:flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.img-galeria {
+    width: 30%;
+    height: 30%;
+    border-radius: 15px;
+    margin: 1.2vw;
+    border:2px solid #000000; /*bordes a las imagenes, solo en main*/
+}
+.img-galeria:hover {
+    -webkit-transform:scale(0.9);
+    transform:scale(0.9);
 }
 /*articulos principales*/
 article {
@@ -101,7 +109,7 @@ article li{
     padding-left: 2%;
 }
 main a:visited {
-    color:#e63946;
+    color:#b83b5e;
 }
 main a:hover {
     text-decoration: none;
@@ -109,21 +117,16 @@ main a:hover {
 main iframe {
     margin: 2%;
     float:right;
-}
-main img {
-    border:1px solid #000000; /*bordes a las imagenes, solo en main*/
-    border-radius: 8px;
-    box-shadow: 0 13px 27px -5px hsl(240deg 30% 28% / 25%), 0 8px 16px -8px hsl(0deg 0% 0% / 30%), 0 -6px 16px -6px hsl(0deg 0% 0% / 3%); /*agregue una sombra a la caja*/
-    margin-bottom: 2%;
+    border: 4px double  #b83b5e;
 }
 /*tabla de pagina alimentacion*/
 #tipo_de_alimentos {
     margin-top: 1%;
-    border: solid #1d3557;
+    border: solid #b83b5e;
 }
 th {
     padding:1%;
-    border-bottom: solid #1d3557;
+    border-bottom: solid #f08a5d;
     text-align: center;
 }
 td {
@@ -131,57 +134,89 @@ td {
 }
 /*formulario de contacto*/
 #contacto {
-    border: 3px solid #1d3557;
+    border: 3px dashed #6a2c70;
+    font-size: 2vw;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-content: center;
     text-align: center;
-    margin-right: 40%;
-    margin-left:40%;
+    width: 50vw;
+    margin: 2% 25%;
 }
 .sharpage {
     font-family: Original Surfer;
-    color:#457b9d;
+    color:#b83b5e;
+    margin: 2% 0;
 }
 #message {
     font-family: Rajdhani;
     padding: 1%;
 }
-/*formulario de comentarios*/
-#comentarios {
-    text-align: center;
-    width: 100%;
-    border-radius: 15px;
+.cajas {
+    width: 20vw;
+    height: 3vh;
 }
-#comentarios legend {
-    padding-bottom: 1%;
-    font-size: 120%;
+.caja-texto {
+    width: 40vw;
+    height: 30vh;
 }
-#email {
-    margin-bottom: 1%;
-}
-#comentarios textarea {
-    font-family: Rajdhani;
-    padding: 1%;
+.name, .email, .message {
+    margin: 2% 0;
 }
 
-#submit_button {
+/*#submit_button {
     font-family: Rajdhani;
+    font-size: 2vw;
     padding: 1%;
     margin: 1%;
-    border-radius: 15px;
-}
+    border: 2px solid #b83b5e;
+}*/
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button {
+    width: 140px;
+    height: 45px;
+    margin-bottom: 3%;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 800;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    }
+  
+  .button:hover {
+    background-color: #b83b5e;
+    box-shadow: 0px 15px 20px rgba(184, 59, 94, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
 /*footer*/
 footer {
-    background-color: #e63946;
-    color:black;
+    background-color: #f9ed69;
+    color:#000000;
     display: inline-block;
     width: 100%;
     display: flex;
 }
 /*sello*/
 .parrafo-footer {
-    border: 2px dashed black;
-    padding:0px;
+    border: 2px dashed #000000;
     position: relative;
-    width: 70px;
+    width: 60px;
     height: 80px;
     float:left;
     margin:3%;

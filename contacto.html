@@ -11,10 +11,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Rajdhani:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
     </style>
 </head>
 <body>
-    <header id="header"><h1>Bienvenido a la página de los Shar Pei</h1><a href="/Web/index.html"><img src="img/shar-pei-facebook-640x427.jpg" alt="Imagen de perro SharPei"></a></header>
+    <header id="header"><h1>Bienvenido a la página de los Shar Pei</h1><a href="/Web/index.html"></a></header>
     <nav id="nav-header">
         <ul>
             <li><a href="index.html">Principal</a></li>
@@ -25,25 +26,29 @@
     <a href="#header"><img src="arrow-circle-up-solid.svg" alt="Icono volver arriba" class="icon icon-arriba"></a>
     <main>
         <h2>Te podés contactar con nosotros</h2>
-        <form action="https://formspree.io/f/xayanpjb" method="POST" target="_blank">
-            <div id="contacto">
+        <div id="contacto">
+            <form action="https://formspree.io/f/xayanpjb" method="POST" target="_blank">
                 <h2 class="sharpage">Shar Page</h2>
-                <label for="name" class="descripcion">Your name:</label>
-                <input id="name" name="name" type="text" value="" class="cajas" required><br>
-                <label for="email" class="descripcion">Your email:</label>
-                <input id="email" name="email" type="text" value="" class="cajas" required><br>
-                <label for="message" class="descripcion">Your message</label><br>
-                <textarea id="message" name="message" rows="7" cols="30" class="cajas" required placeholder="Escribí tu mensaje acá"></textarea><br>
-                <input id="submit_button" type="submit" value="Send email">
-            </div>
-        </form>
+                <label for="name" class="descripcion name">Your name:</label>
+                <input id="name" name="name" type="text" value="" class="cajas name" required><br>
+                <label for="email" class="descripcion email">Your email:</label>
+                <input id="email" name="email" type="text" value="" class="cajas email" required><br>
+                <label for="message" class="descripcion message">Your message</label><br>
+                <textarea id="message" name="message" rows="7" cols="30" class="caja-texto message" required placeholder="Escribí tu mensaje acá"></textarea><br>
+                <div class="wrap">
+                    <input id="submit_button" class="button" type="submit" value="Send email">
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
-        <p id="parrafo-footer">Dev. Paola Cartalá para Codo a Codo 4.0 - 2021</p>
+        <div class="parrafo-footer">
+            <p>PAOLA DEV</p>
+        </div>
         <div id="redes">
-            <a href="mailto:paola.cartala@gmail.com" title="E-mail" target="_blank"><img src="mail.svg" alt="Imagen de mail"  class="icon1 icon"></a>
-            <a href="https://www.linkedin.com/in/paola-cartal%C3%A1-3b11b45a" title="Perfil LinkedIn" target="_blank"><img src="linkedin.svg" alt="Imagen de mail" class="icon2 icon"></a>
-            <a href="https://www.instagram.com/paoc.bj23/" title="Perfil Instagram" target="_blank"><img src="instagram-brands.svg" alt="Icono de instagram" class="icon3 icon"></a>
+            <a href="mailto:paola.cartala@gmail.com" title="E-mail" target="_blank"><img src="mail.svg" alt="Imagen de mail"  class="icon-footer icon"></a>
+            <a href="https://www.linkedin.com/in/paola-cartal%C3%A1-3b11b45a" title="Perfil LinkedIn" target="_blank"><img src="linkedin.svg" alt="Imagen de mail" class="icon-footer icon"></a>
+            <a href="https://www.instagram.com/paoc.bj23/" title="Perfil Instagram" target="_blank"><img src="instagram-brands.svg" alt="Icono de instagram" class="icon-footer icon"></a>
         </div>
     </footer>
 </body>
