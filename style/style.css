@@ -14,7 +14,7 @@ header h1{
     padding: 4vw;
 }
 /*menu de navegacion*/
-#nav-header {
+#nav-bar {
     color: #6a2c70;
     font-size: 170%;
     display: flex;
@@ -28,13 +28,12 @@ header h1{
     padding-top: 30px;
     width: 100%;
 }
-
 nav li {
     display:inline; /*para que los elemenos de nav se muestren en la misma linea*/
     padding: 5px; /*modifique el relleno*/
     margin:17px; /*modifique los margenes de los elementos*/
 }
-#nav-header li:hover { /*aplique hover para cuando pasa el cursor por encima*/
+#nav-bar li:hover { /*aplique hover para cuando pasa el cursor por encima*/
     border: 2px solid #6a2c70;
     border-radius: 15px; /*con esto se redondean los bordes*/
     padding: 5px;
@@ -44,6 +43,7 @@ nav li a {
     text-decoration: none; /*le saqué la línea de enlace de nav*/
     color: #b83b5e;
 }
+
 /*cuerpo de la pagina*/
 body {
     font-family: Rajdhani; /*agrego las fuentes nuevas a body*/
@@ -66,18 +66,18 @@ main {
 /*titulos*/
 h2 {
     text-align: center;
-    color:#6a2c70;
+    color:#f08a5d;
     margin-bottom: 1%;
 }
 h3 {
     text-align: left;
-    color:#6a2c70;
+    color:#f08a5d;
     margin-bottom: 1%;
-    margin-top: 1%;
+    margin-top: 2%;
 }
 /*galeria de fotos*/
 #galeria {
-    background-color:#f08a5d;
+    background-color:#b83b5e;
     overflow: auto;
     box-shadow: 0 13px 27px -5px hsl(240deg 30% 28% / 25%), 0 8px 16px -8px hsl(0deg 0% 0% / 30%), 0 -6px 16px -6px hsl(0deg 0% 0% / 3%);
     border-radius: 15px;
@@ -120,17 +120,28 @@ main iframe {
     border: 4px double  #b83b5e;
 }
 /*tabla de pagina alimentacion*/
-#tipo_de_alimentos {
+.tipo_de_alimentos {
     margin-top: 1%;
+    table-layout: fixed;
+    border-collapse: collapse;
     border: solid #b83b5e;
 }
 th {
     padding:1%;
+    font-size: 2.3vw;
     border-bottom: solid #f08a5d;
     text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+.categorias {
+    font-size: 2vw;
+    font-family: 'Indie Flower', cursive;
 }
 td {
     padding: 1%;
+}
+.mobile {
+    display: none;
 }
 /*formulario de contacto*/
 #contacto {
@@ -237,4 +248,66 @@ footer {
     width: 3%;
     margin: 5%;
     padding-right: 5%;
+}
+@media screen and (max-width: 640px) {
+    header h1 {
+        font-size: 15vw;
+    }
+    nav ul {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 1vw;
+    }
+    nav li {
+        font-size: 8vw;
+        text-align: center;
+        grid-row-gap: 1vh;
+        padding: 0px;
+        margin: 0px;
+    }
+    #nav-bar li:hover {
+        border: 0px;
+        border-radius: 0px;
+        padding: 0px;
+        margin:0px;
+    }
+    .icon-arriba {
+        width: 10vw;
+    }
+    #galeria {
+        display: grid;
+        grid-template-columns: auto;
+        box-sizing: border-box;
+    }
+    .img-galeria {
+        width: 96%;
+        height: 96%;
+        margin: 1vw;
+    }
+    main iframe {
+        margin: 1%;
+        float:none;
+        width: auto;
+    }
+    .tipo_de_alimentos {
+        display: none;
+    }
+    .mobile {
+        display:inherit;
+    }
+    h4 {
+        color: #b83b5e;
+        padding: 1vh;
+    }
+    .beneficios, .desventajas {
+        font-weight: 600;
+        padding: 1vh;
+    }
+    #contacto {
+        font-size: 4vw;
+    }
+    .icon-footer {
+        width: 10%;
+        margin-top: 7vh;
+    }
 }

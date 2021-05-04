@@ -11,11 +11,12 @@
         @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Rajdhani:wght@300&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
     </style>
 </head>
 <body>
-    <header id="header"><h1>Bienvenido a la página de los Shar Pei</h1><a href="/Web/index.html"></a></header>
-    <nav id="nav-header">
+    <header id="header"><h1>Bienvenido a la página de los Shar Pei</h1></header>
+    <nav id="nav-bar">
         <ul>
             <li><a href="index.html">Principal</a></li>
             <li><a href="health_excercise.html">Salud y ejercicio</a></li>
@@ -46,24 +47,24 @@
                 <li>Vitaminas.</li>
             </ol>
             <h3>Tipos de comida que ayudarán a determinar la dieta</h3>
-            <table id="tipo_de_alimentos">
+            <table class="tipo_de_alimentos">
                 <tr>
                     <th>Tipo de alimento</th>
                     <th>Beneficios</th>
                     <th>Desventajas</th>
                 </tr>
                 <tr>
-                    <td><abbr title="Biologically Appropriate Raw Food">BARF</abbr></td>
+                    <td class="categorias"><abbr title="Biologically Appropriate Raw Food">BARF</abbr></td>
                     <td>Con una dieta natural basada en carne y verduras crudas, el Shar Pei cachorro tiene un alimento de calidad. El programa BARF recomienda una ración diaria del 6 al 8% del peso del cachorro en 3 o 4 comidas hasta los 6 meses.</td>
                     <td>Al ingerir carne cruda, los cachorros Shar Pei pueden tener problemas de obstrucción e incluso de asfixia. También pueden sufrir problemas bacteriológicos si la calidad de la carne no es perfecta. Como resultado, tu cachorro puede desarrollar salmonelosis u otras intoxicaciones.</td>
                 </tr>
                 <tr>
-                    <td>Comida casera</td>
+                    <td class="categorias">Comida casera</td>
                     <td>La principal ventaja es que sabes exactamente lo que come tu perro. En pocas palabras, las comidas caseras deben consistir en un tercio de carne (o pescado), un tercio de verduras y un tercio de arroz. Y para las vitaminas, el calcio y otros minerales, puede añadirlos con complementos alimenticios en polvo o en tabletas. Por supuesto, tendrás que dosificarlos perfectamente de acuerdo a la edad y peso.</td>
                     <td>Si decides darle "sobras" o comida casera, existe un alto riesgo de que no le des la cantidad adecuada. Y así, puede llegar a ser rápidamente obeso e incluso muy enfermo. Además, la dieta será variada pero no necesariamente equilibrada.</td>
                 </tr>
                 <tr>
-                    <td>Croquetas</td>
+                    <td class="categorias">Croquetas</td>
                     <td>
                         <ul>
                             <li>Velocidad y simplicidad: no siempre tenemos el tiempo o el deseo de preparar una comida.</li>
@@ -75,6 +76,28 @@
                     <td>No sabes realmente de qué están hechas las croquetas, ¿hay suficientes proteínas, nutrientes? No contienen demasiados carbohidratos, cereales.</td>
                 </tr>
             </table>
+            <div class="mobile">
+                <h4><abbr title="Biologically Appropriate Raw Food">BARF</abbr></h4>
+                    <p class="beneficios">Beneficios</p>
+                    <p>Con una dieta natural basada en carne y verduras crudas, el Shar Pei cachorro tiene un alimento de calidad. El programa BARF recomienda una ración diaria del 6 al 8% del peso del cachorro en 3 o 4 comidas hasta los 6 meses.</p>
+                    <p class="desventajas">Desventajas</p>
+                    <p>Al ingerir carne cruda, los cachorros Shar Pei pueden tener problemas de obstrucción e incluso de asfixia. También pueden sufrir problemas bacteriológicos si la calidad de la carne no es perfecta. Como resultado, tu cachorro puede desarrollar salmonelosis u otras intoxicaciones.</p>
+                <h4>Comida casera</h4>
+                    <p class="beneficios">Beneficios</p>
+                    <p>La principal ventaja es que sabes exactamente lo que come tu perro. En pocas palabras, las comidas caseras deben consistir en un tercio de carne (o pescado), un tercio de verduras y un tercio de arroz. Y para las vitaminas, el calcio y otros minerales, puede añadirlos con complementos alimenticios en polvo o en tabletas. Por supuesto, tendrás que dosificarlos perfectamente de acuerdo a la edad y peso.</p>
+                    <p class="desventajas">Desventajas</p>
+                    <p>Si decides darle "sobras" o comida casera, existe un alto riesgo de que no le des la cantidad adecuada. Y así, puede llegar a ser rápidamente obeso e incluso muy enfermo. Además, la dieta será variada pero no necesariamente equilibrada.</p>
+                <h4>Croquetas</h4>
+                    <p class="beneficios">Beneficios</p>
+                    <p><ul>
+                        <li>Velocidad y simplicidad: no siempre tenemos el tiempo o el deseo de preparar una comida.</li>
+                        <li>Garantizar el equilibrio nutricional.</li>
+                        <li>Almacenamiento: las bolsas de croquetas se pueden almacenar durante mucho tiempo.</li>
+                        <li>Precio.</li>
+                    </ul></p>
+                    <p class="desventajas">Desventajas</p>
+                    <p>No sabes realmente de qué están hechas las croquetas, ¿hay suficientes proteínas, nutrientes? No contienen demasiados carbohidratos, cereales.</p>
+            </div>
         </article>
     </main>
     <footer>
