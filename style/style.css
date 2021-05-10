@@ -1,6 +1,13 @@
+/* || RESET */
 * {
     margin: 0px;
     padding: 0px;
+}
+/* || BODY */
+/*cuerpo de la pagina*/
+body {
+    font-family: Rajdhani; /*agrego las fuentes nuevas a body*/
+    text-align: justify;
 }
 /*modifico el header*/
 header {
@@ -9,13 +16,14 @@ header {
 }
 header h1{
     font-size: 5vw;
-    color:#6a2c70;
+    color:#457B9D;
     text-align: center;
     padding: 4vw;
+    font-weight: 800 !important; /*anulo bootstrap*/
 }
 /*menu de navegacion*/
 #nav-bar {
-    color: #6a2c70;
+    color: #457B9D !important; /*anulo bootstrap*/
     font-size: 170%;
     display: flex;
     flex-flow: row wrap;
@@ -35,69 +43,65 @@ nav li {
 }
 #nav-bar li:hover { /*aplique hover para cuando pasa el cursor por encima*/
     border: 2px solid #6a2c70;
+    color: #6a2c70 !important; /*anulo bootstrap*/
     border-radius: 15px; /*con esto se redondean los bordes*/
     padding: 5px;
     margin:15px;
 }
 nav li a {
-    text-decoration: none; /*le saqué la línea de enlace de nav*/
-    color: #b83b5e;
+    text-decoration: none !important; /*le saqué la línea de enlace de nav*/
+    color: #FB3640;
+    font-weight: 700;
+}
+nav li a:hover {
+    color: #6a2c70 !important; /*anulo bootstrap*/
+    font-weight: 700;
 }
 
-/*cuerpo de la pagina*/
-body {
-    font-family: Rajdhani; /*agrego las fuentes nuevas a body*/
-    text-align: justify;
-}
+/* || MAIN */
 main {
     padding: 2vw;
     font-size: 20px;
 }
+main a:visited {
+    color:#FB3640;
+}
+main a:hover {
+    text-decoration: none;
+}
+main iframe {
+    margin: 2%;
+    float:right;
+    border: 4px double  #FB3640;
+}
 /*icono de volver arriba*/
-.icon {
-    color:#000000 !important;
+.icono {
+    color:#000000 !important; 
 }
 .icon-arriba {
     position:fixed;
     bottom:20px;
-    right: 20px;;
-    width: 4vw;
+    right: 20px;
+    width: 3vw;
+    z-index: 1 !important; /*anulo bootstrap*/
 }
 /*titulos*/
-h2 {
+h2, h3 {
     text-align: center;
     color:#f08a5d;
     margin-bottom: 1%;
+    font-weight: 800;
 }
 h3 {
     text-align: left;
-    color:#f08a5d;
-    margin-bottom: 1%;
     margin-top: 2%;
 }
 /*galeria de fotos*/
 #galeria {
-    background-color:#b83b5e;
-    overflow: auto;
     box-shadow: 0 13px 27px -5px hsl(240deg 30% 28% / 25%), 0 8px 16px -8px hsl(0deg 0% 0% / 30%), 0 -6px 16px -6px hsl(0deg 0% 0% / 3%);
     border-radius: 15px;
-    overflow:hidden;
-    display:flex;
-    flex-flow: row wrap;
-    align-content: space-around;
-    align-items: center;
-    margin-bottom: 2%;
-}
-.img-galeria {
-    width: 30%;
-    height: 30%;
-    border-radius: 15px;
-    margin: 1.2vw;
-    border:2px solid #000000; /*bordes a las imagenes, solo en main*/
-}
-.img-galeria:hover {
-    -webkit-transform:scale(0.9);
-    transform:scale(0.9);
+    background-color: #FB3640;
+    padding-bottom: 2%;
 }
 /*articulos principales*/
 article {
@@ -108,23 +112,12 @@ article li{
     list-style-type:square;
     padding-left: 2%;
 }
-main a:visited {
-    color:#b83b5e;
-}
-main a:hover {
-    text-decoration: none;
-}
-main iframe {
-    margin: 2%;
-    float:right;
-    border: 4px double  #b83b5e;
-}
 /*tabla de pagina alimentacion*/
 .tipo_de_alimentos {
     margin-top: 1%;
     table-layout: fixed;
     border-collapse: collapse;
-    border: solid #b83b5e;
+    border: solid #FB3640;
 }
 th {
     padding:1%;
@@ -140,12 +133,12 @@ th {
 td {
     padding: 1%;
 }
-.mobile {
+.mobile { /*para que no se muestre la tabla en el teléfono*/
     display: none;
 }
 /*formulario de contacto*/
 #contacto {
-    border: 3px dashed #6a2c70;
+    border: 3px dashed #457B9D;
     font-size: 2vw;
     display:flex;
     flex-flow: column nowrap;
@@ -157,7 +150,7 @@ td {
 }
 .sharpage {
     font-family: Original Surfer;
-    color:#b83b5e;
+    color:#FDCA40;
     margin: 2% 0;
 }
 #message {
@@ -166,31 +159,23 @@ td {
 }
 .cajas {
     width: 20vw;
-    height: 3vh;
+    height: 5vh;
 }
 .caja-texto {
     width: 40vw;
     height: 30vh;
+    font-size: 1.5vw;
 }
 .name, .email, .message {
     margin: 2% 0;
 }
-
-/*#submit_button {
-    font-family: Rajdhani;
-    font-size: 2vw;
-    padding: 1%;
-    margin: 1%;
-    border: 2px solid #b83b5e;
-}*/
 .wrap {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
-  .button {
+.button {
     width: 140px;
     height: 45px;
     margin-bottom: 3%;
@@ -207,17 +192,17 @@ td {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-    }
-  
-  .button:hover {
-    background-color: #b83b5e;
+}
+.button:hover {
+    background-color: #FB3640;
     box-shadow: 0px 15px 20px rgba(184, 59, 94, 0.4);
     color: #fff;
     transform: translateY(-7px);
-  }
-/*footer*/
-footer {
-    background-color: #f9ed69;
+}
+
+/* || FOOTER */
+#pie-pag {
+    background-color: #FDCA40;
     color:#000000;
     display: inline-block;
     width: 100%;
@@ -243,13 +228,48 @@ footer {
 #redes {
     flex:2;
 }
-.icon-footer {
+.icono-pie {
     float:right;
     width: 3%;
     margin: 5%;
     padding-right: 5%;
+    box-sizing: content-box !important; /*anulo bootstrap*/
 }
-@media screen and (max-width: 640px) {
+
+/* || MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 7vw;
+    }
+    .icon-arriba {
+        width: 4vw;
+    }
+    #galeria {
+        padding-bottom: 7%;
+    }
+    .img-galeria {
+        width: 768px;
+        height: 600px;
+    }
+    .tipo_de_alimentos {
+        display: none;
+    }
+    .mobile {
+        display:inherit;
+    }
+    .icono-pie {
+        width: 5%;
+        margin-top: 7vh;
+    }
+    .cajas {
+        height: 4vh;
+    }
+    .caja-texto {
+        font-size: 2vw;
+    }
+}
+@media (max-width: 640px) {
     header h1 {
         font-size: 15vw;
     }
@@ -275,14 +295,11 @@ footer {
         width: 10vw;
     }
     #galeria {
-        display: grid;
-        grid-template-columns: auto;
-        box-sizing: border-box;
+        padding-bottom: 7%;
     }
     .img-galeria {
-        width: 96%;
-        height: 96%;
-        margin: 1vw;
+        width: 360px;
+        height: 200px;
     }
     main iframe {
         margin: 1%;
@@ -296,7 +313,7 @@ footer {
         display:inherit;
     }
     h4 {
-        color: #b83b5e;
+        color: #FB3640;
         padding: 1vh;
     }
     .beneficios, .desventajas {
@@ -306,7 +323,10 @@ footer {
     #contacto {
         font-size: 4vw;
     }
-    .icon-footer {
+    .caja-texto {
+        font-size: 3vw;
+    }
+    .icono-pie {
         width: 10%;
         margin-top: 7vh;
     }
