@@ -322,6 +322,8 @@ td {
     }
     #contacto {
         font-size: 4vw;
+        width: 80vw;
+        margin: 2% 8%;
     }
     .caja-texto {
         font-size: 3vw;
