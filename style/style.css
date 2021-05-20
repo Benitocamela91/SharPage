@@ -89,12 +89,12 @@ main iframe {
 h2, h3 {
     text-align: center;
     color:#f08a5d;
-    margin-bottom: 1%;
+    margin-bottom: 3%;
+    margin-top: 3%;
     font-weight: 800;
 }
 h3 {
     text-align: left;
-    margin-top: 2%;
 }
 /*galeria de fotos*/
 #galeria {
@@ -271,7 +271,7 @@ td {
 }
 @media (max-width: 640px) {
     header h1 {
-        font-size: 15vw;
+        font-size: 13vw;
     }
     nav ul {
         display: grid;
